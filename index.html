@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="auto-app">
+        <div class="title">wusan to app</div>
+        <div class="todo-from">
+            <input type="text" class="input-todo" placeholder="please input">
+            <div class="botton">add todo</div>
+        </div>
+        <div class="item complete">
+            <div class="p">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div class="p">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div class="p">
+                <input type="checkbox" >
+                <span class="name">吃饭</span>
+            </div>
+            <div class="del">del</div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(to right, rgb(84, 84, 238), rgb(163, 117, 249));
+        }
+        .auto-app {
+            width: 98%;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 1%;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+        .title {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .input-todo {
+            border: 1px solid  #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            padding-left: 1%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .todo-from {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .botton{
+            width: 10%;
+            height: 50px;
+            border-radius: 0 20px 20px 0;
+            background: linear-gradient(
+                to right, 
+            rgb(116, 116, 234), 
+            rgb(163, 117, 249)
+            
+            );
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+        }
+        .item{
+            display: flex;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: rgba(149,157,165,0.2) 0px 8px 20px;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .del{
+            color: red;
+        }
+        .complete{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+
+    </style>
+
+
+
+
+</body>
+
+</html>
